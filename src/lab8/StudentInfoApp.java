@@ -18,13 +18,14 @@ public class StudentInfoApp {
 		System.out.println("Welcome to our class!");
 		
 		while(nextStudent.equals("y")){
+			moreInfo = "q";
 			System.out.println("Please enter a number 1-10 for that students information.");
 			userNumber = scnr.nextInt();
-			while (userNumber > 10 || userNumber < 1){
+			while ((userNumber > 10) || (userNumber < 1)){
 				System.out.println("The number you entered was not in the given range. Please enter a number 1-10.");
 				userNumber = scnr.nextInt();
 			}
-			
+			scnr.nextLine();
 			System.out.println("Student number " + userNumber + " is " + names[userNumber-1] + "! What would you like to know about them?(Home Town or Favorite Food)");
 			userInfo = scnr.nextLine();
 			while (loopCheck == 1) {
