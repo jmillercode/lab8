@@ -18,6 +18,7 @@ public class StudentInfoApp {
 		System.out.println("Welcome to our class!");
 		
 		while(nextStudent.equals("y")){
+			loopCheck = 1;
 			moreInfo = "q";
 			System.out.println("Please enter a number 1-10 for that students information.");
 			userNumber = scnr.nextInt();
@@ -59,6 +60,7 @@ public class StudentInfoApp {
 						System.out.println("Would you like to learn about another student?");
 						nextStudent = scnr.next();
 					}
+					
 				}
 				else {
 					System.out.println("The information you asked for was not in out data base. Please enter favorite food or home town.");
